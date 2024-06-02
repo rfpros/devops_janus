@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+
+set -ex -o pipefail
+
+function _template_instance_count() {
+    aws ec2 describe-instances --filter Name=instance-state-name,Values=running --output json 2>/dev/null \
+        | jq -r '
+            .Reservations[]
+                | .Instances[]
+                | .Tags[]
+                | select(.Key=="Name")
+                | .Value
+            ' 2>/dev/null \
+        | grep -c "$1" || true
+}
+
+function _template_instance_create() {
+    aws ec2 run-instances --launch-template "LaunchTemplateName=$1,Version=$2" --count "$3" >/dev/null
+}
+
+function launch() {
+    local template count desired max
+
+    template="$1"
+    desired="$2"
+    # $3 is max, and optional
+    if [[ -n "$3" ]]; then
+        if [[ "$3" -lt "$desired" ]]; then
+            desired="$3"
+        fi
+    fi
+
+    count=$(_template_instance_count "$template")
+
+    if [[ $count -lt $desired ]]; then
+        _template_instance_create "$template" '$Default' $((desired - count))
+    fi
+}
+
+function usage() {
+    echo "Usage: $0 launch TEMPLATE DESIRED [MAX]" >&2
+    exit 1
+}
+
+
+if [ "$0" = "$BASH_SOURCE" ]; then
+    if [ -z "$1" ]; then
+        usage
+    elif [ "$#" -ge 3 ]; then
+        subcommand="$1"
+        shift
+        "$subcommand" "$@"
+    fi
+fi
