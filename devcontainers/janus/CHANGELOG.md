@@ -2,6 +2,13 @@
 <!--- @generated --->
 
 
+## [0.1.6](https://github.com/rfpros/devops_janus/compare/devcontainer-janus-v0.1.5...devcontainer-janus-v0.1.6) (2024-06-26)
+
+
+### Miscellaneous Chores
+
+* **devcontainer-janus:** Synchronize undefined versions
+
 ## [0.1.5](https://github.com/jhatler/janus/compare/devcontainer-janus-v0.1.4...devcontainer-janus-v0.1.5) (2024-05-31)
 
 
