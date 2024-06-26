@@ -2,6 +2,13 @@
 <!--- @generated --->
 
 
+## [0.1.6](https://github.com/rfpros/devops_janus/compare/container-janus-v0.1.5...container-janus-v0.1.6) (2024-06-26)
+
+
+### Miscellaneous Chores
+
+* Migrate to opencontainer labels ([#208](https://github.com/rfpros/devops_janus/issues/208)) ([fc0d474](https://github.com/rfpros/devops_janus/commit/fc0d474742bc020f2d9fe8a7ac4541186d5587c4)), closes [#207](https://github.com/rfpros/devops_janus/issues/207) [#203](https://github.com/rfpros/devops_janus/issues/203)
+
 ## [0.1.5](https://github.com/jhatler/janus/compare/container-janus-v0.1.4...container-janus-v0.1.5) (2024-05-31)
 
 

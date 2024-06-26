@@ -2,6 +2,20 @@
 <!--- @generated --->
 
 
+## [0.1.1](https://github.com/rfpros/devops_janus/compare/tf-modules-v0.1.0...tf-modules-v0.1.1) (2024-06-26)
+
+
+### Features
+
+* Add CHANGELOG/README/Tests to github_oidc ([#308](https://github.com/rfpros/devops_janus/issues/308)) ([0d373c3](https://github.com/rfpros/devops_janus/commit/0d373c3d32339b491e8b4cbaca158bcfcd00f3ea)), closes [#300](https://github.com/rfpros/devops_janus/issues/300)
+* Add GitHub OIDC Terraform Module ([#289](https://github.com/rfpros/devops_janus/issues/289)) ([bc9a3b7](https://github.com/rfpros/devops_janus/commit/bc9a3b70f35af31b527b68d36f7cd83967ed94bd)), closes [#288](https://github.com/rfpros/devops_janus/issues/288)
+* Add runners stack to Spacelift ([#333](https://github.com/rfpros/devops_janus/issues/333)) ([3ffcc9e](https://github.com/rfpros/devops_janus/commit/3ffcc9e2869812d36142d7adc4df96a357eeeedd)), closes [#278](https://github.com/rfpros/devops_janus/issues/278)
+
+
+### Miscellaneous Chores
+
+* **deps:** Bump hashicorp/aws in /terraform/modules/github_oidc ([#310](https://github.com/rfpros/devops_janus/issues/310)) ([b915474](https://github.com/rfpros/devops_janus/commit/b91547492238d6f00c43c41533e902dcfad99339))
+
 ## 0.1.0 (2024-05-31)
 
 

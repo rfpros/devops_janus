@@ -2,6 +2,15 @@
 <!--- @generated --->
 
 
+## [0.1.3](https://github.com/rfpros/devops_janus/compare/Janus.js-v0.1.2...Janus.js-v0.1.3) (2024-06-26)
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** Bump @types/node from 20.13.0 to 20.14.0 ([#213](https://github.com/rfpros/devops_janus/issues/213)) ([5c39c6d](https://github.com/rfpros/devops_janus/commit/5c39c6d275bc95c09a7896469e5d18675d80b658))
+* **deps-dev:** Bump @types/node from 20.14.0 to 20.14.2 ([#237](https://github.com/rfpros/devops_janus/issues/237)) ([33c7d49](https://github.com/rfpros/devops_janus/commit/33c7d4913ce47bac4e099023024909b6996a5da8))
+* **deps-dev:** Bump @types/node from 20.14.2 to 20.14.8 ([#269](https://github.com/rfpros/devops_janus/issues/269)) ([c07ec1c](https://github.com/rfpros/devops_janus/commit/c07ec1cc8f241f5009e4fa0d5ea14807f19ab4f5))
+
 ## [0.1.2](https://github.com/jhatler/janus/compare/Janus.js-v0.1.1...Janus.js-v0.1.2) (2024-05-31)
 
 
